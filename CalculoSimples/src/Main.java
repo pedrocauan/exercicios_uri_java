@@ -8,6 +8,28 @@ import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+
+        // SEGUNDA FORMA
+
+        //muda a data
+        Locale.setDefault(Locale.US);
+
+        Scanner input = new Scanner(System.in);
+        int codPeca1 = input.nextInt();
+        int qntPeca1 = input.nextInt();
+        double valorPeca1 = input.nextDouble();
+
+        int codPeca2 = input.nextInt();
+        int qntPeca2 = input.nextInt();
+        double valorPeca2 = input.nextDouble();
+
+        double custoTotal = qntPeca1 * valorPeca1 + qntPeca2 * valorPeca2;
+
+        System.out.printf("VALOR A PAGAR: R$ %.2f\n", custoTotal);
+        
+        input.close();
+
+        //=== PRIMEIRA FORMA ===
         //VARIAVEIS
        /*  int partOneCode;
         int partOneQuantity;
@@ -18,27 +40,6 @@ public class Main {
         double partTwoValue;
 
         double totalValue; */
-
-        //muda a data
-        Locale.setDefault(Locale.US);
-        Scanner input = new Scanner(System.in);
-        int codPeca1 = input.nextInt();
-        int qntPeca1 = input.nextInt();
-        double valorPeca1 = input.nextDouble();
-
-         int codPeca2 = input.nextInt();
-        int qntPeca2 = input.nextInt();
-        double valorPeca2 = input.nextDouble();
-
-        double custoTotal = qntPeca1 * valorPeca1 + qntPeca2 * valorPeca2;
-
-
-
-        System.out.printf("VALOR A PAGAR: R$ %.2f\n", custoTotal);
-        
-        input.close();
-
-        //=== PRIMEIRA FORMA ===
        /* String [] input; // array que guarda todas as entradas passadas em uma string
         Scanner in = new Scanner(System.in);
     
